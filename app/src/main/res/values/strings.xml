@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">AlzheimerAssistant</string>
+    <string name="action_settings">Settings</string>
+    <string name="caregiver">Caregiver</string>
+    <string name="patient">Patient</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="title_activity_caregiver_home_page">CaregiverHomePage</string>
+    <string name="title_activity_aregiver_home">aregiverHomeActivity</string>
+    <string name="CaregiverHome">CaregiverHome</string>
+    <string name="geofence">geofence</string>
+    <string name="FindMyFriends">FindMyFriends</string>
+    <string name="MyCircles">MyCircles</string>
+    <string name="MyPatients">MyPatients</string>
+    <string name="title_activity_reminders">title_activity_reminders</string>
+    <string name="savebyperson">saveByPerson</string>
+    <string name="savebylocation">saveByLocation</string>
+
+    <!-- Caregiver Geofence resources -->
+
+    <string name="submit_button">SUBMIT</string>
+    <!--<string name="radius_hint">Choose from 15 - 100</string>-->
+    <string name="radius_initial_val">50</string>
+    <string name="radius_label">Select a radius \n
+        for the geo-fence : </string>
+    <string name="patientId">patientId</string>
+    <string name="caregiverId">caregiverId</string>
+    <string name="geofenceNotExistMsg">GeoFence does not exist\n for this user</string>
+    <string name="setupGeoFenceBtnLabel">Set up Geo Fence</string>
+    <string name="patient_name">patient_name</string>
+    <string name="caregiver_name">caregiver_name</string>
+    <string name="caregiver_email">caregiver_email</string>
+    <!-- End of Caregiver Geofence resources -->
+    <!-- Location Reminders -->
+    <string name="setupReminderByLocationBtnLabel">Set Location Reminder</string>
+    <string name="locationReminderId">locationReminderId</string>
+    <!-- End of Location Reminders -->
+    <!-- Error strings -->
+    <string name="not_connected">GoogleApiClient no yet connected. Try again.</string>
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="unknown_geofence_error">
+        Unknown error: the Geofence service is not available now
+    </string>
+    <string name="geofence_transition_invalid_type">
+        Geofence transition error: invalid transition type %1$d
+    </string>
+
+    <!-- Buttons strings -->
+    <string name="add_geofences">Add geofences</string>
+    <string name="remove_geofences">Remove geofences</string>
+
+    <string name="geofences_added">Geofences added</string>
+    <string name="geofences_removed">Geofences removed</string>
+
+    <!-- Transition type strings -->
+    <string name="geofence_transition_entered">Entered</string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+
+    <string name="geofence_transition_notification_text">Click notification to return to app</string>
+
+    <integer name="default_geofence_exit_interval">15</integer>
+    <string name="geofence_parcel_key">parcelGeoFenceDetail</string>
+    <string name="button_undo" />
+
+    <!-- Action Bar Titles -->
+    <string name="caregiver_home_title">Caregiver Home</string>
+    <string name="my_patients_title">My Patients</string>
+    <string name="find_my_friends_title">Find My Friends</string>
+    <string name="my_circles_title">My Circles</string>
+    <string name="my_friends">My Friends</string>
+    <string name="my_caregivers">My Caregivers</string>
+
+    <!-- end -->
+
+    <!--Album -->
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+    <string name="title_activity_circle_list">CircleListActivity</string>
+    <string name="title_activity_circle_details">CircleDetailsActivity</string>
+    <string name="caregiver_circle">caregiver_circle</string>
+    <string name="caregiver_cell">caregiver_cell</string>
+    <string name="caregiver_address">caregiver_address</string>
+
+    <string name="circle">Circle</string>
+
+</resources>

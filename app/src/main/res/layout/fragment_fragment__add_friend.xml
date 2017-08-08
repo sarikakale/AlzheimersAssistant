@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sarika.alzheimerassistant.fragments.Fragment_AddFriend">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="100dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:text="Circle"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/family"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:text="Family" />
+
+        <CheckBox
+            android:id="@+id/friends"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:text="Friends" />
+
+        <CheckBox
+            android:id="@+id/neighbors"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp"
+            android:text="Neighbors" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/neighbors"
+            android:text="add"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="310dp" />
+    </RelativeLayout>

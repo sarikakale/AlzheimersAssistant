@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".fragments.ContactDetails">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cfirstName"
+        android:hint="First Name"
+        android:inputType="textAutoComplete"
+        android:maxLines="1"
+        android:nextFocusDown="@+id/cmiddleName"
+        android:imeOptions="actionNext"
+        android:layout_alignParentTop="true"
+        />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cmiddleName"
+        android:hint="Middle Name"
+        android:inputType="textAutoComplete"
+        android:maxLines="1"
+        android:layout_below="@+id/cfirstName"
+        android:nextFocusForward="@+id/clastName"
+        android:imeOptions="actionNext"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clastName"
+        android:hint="Last Name"
+        android:layout_below="@+id/cmiddleName"
+        android:inputType="textAutoComplete"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/caddr"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/caddr"
+        android:hint="Address Street"
+        android:layout_below="@+id/clastName"
+        android:inputType="textAutoComplete"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/ccity"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ccity"
+        android:hint="City"
+        android:layout_below="@+id/caddr"
+        android:inputType="textAutoComplete"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/cstate"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cstate"
+        android:layout_below="@+id/ccity"
+        android:hint="State"
+        android:inputType="textAutoComplete"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/czip"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/czip"
+        android:hint="ZipCode"
+        android:inputType="number"
+        android:layout_below="@+id/cstate"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/ccountry"
+        />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ccountry"
+        android:hint="Country"
+        android:layout_below="@+id/czip"
+        android:inputType="textAutoComplete"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/cphone"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cphone"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:layout_below="@+id/ccountry"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/cemail"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cemail"
+        android:hint="Email"
+        android:layout_below="@+id/cphone"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        android:id="@+id/facial_next"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/cphone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp" />
+
+
+</RelativeLayout>

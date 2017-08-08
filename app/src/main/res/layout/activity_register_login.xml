@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    tools:context="com.example.sarika.alzheimerassistant.activity.RegisterLoginActivity">
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="149dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:text="Are you not a member?"
+        android:layout_below="@+id/login"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login"
+        android:layout_marginTop="80dp"
+        android:layout_alignRight="@+id/login"
+        android:layout_alignEnd="@+id/login" />
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@+id/registerText"
+        android:layout_alignLeft="@+id/registerText"
+        android:layout_alignStart="@+id/registerText"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
+

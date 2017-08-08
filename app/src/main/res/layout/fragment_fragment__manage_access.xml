@@ -1,0 +1,183 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sarika.alzheimerassistant.fragments.Fragment_ManageAccess">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Circles"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:textSize="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="50dp"
+            android:text="Family" />
+
+        <TextView
+            android:id="@+id/friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:textSize="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="150dp"
+            android:text="Friends" />
+
+        <TextView
+            android:id="@+id/neighbors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:textSize="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="250dp"
+            android:text="Neighbors" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Location"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/familyLoc"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            />
+
+        <CheckBox
+            android:id="@+id/friendsLoc"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="150dp"
+            />
+
+        <CheckBox
+            android:id="@+id/neighborsLoc"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="250dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Notes"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/familyNotes"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="50dp"
+            />
+
+        <CheckBox
+            android:id="@+id/friendsNotes"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="150dp"
+            />
+
+        <CheckBox
+            android:id="@+id/neighborsNotes"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="250dp"
+            />
+
+
+    <CheckBox
+            android:id="@+id/familyVitals"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="310dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="50dp"
+            />
+
+        <CheckBox
+            android:id="@+id/friendsVitals"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="310dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="150dp"
+            />
+
+        <CheckBox
+            android:id="@+id/neighborsVitals"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="310dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="250dp"
+            />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="300dp"
+        android:layout_marginStart="300dp"
+        android:text="Vitals"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/manageAccessBtn"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="400dp"
+        android:text="Assign Access"
+ />
+
+
+</FrameLayout>

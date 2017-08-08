@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sarika.alzheimerassistant">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".base.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/caregiver_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_add_alert_black_24dp" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name=".activity.FirstActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CaregiverDetailsActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.AddFriendActivity"
+            android:label="@string/app_name" />
+        <!-- <activity android:name=".activity.PatientActivities" /> -->
+        <activity android:name=".activity.MyCircles" />
+        <activity
+            android:name=".activity.RemindersActivity"
+            android:label="@string/title_activity_reminders" />
+        <activity android:name=".activity.CreateImagePortfolioActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity
+            android:name=".activity.CaregiverHomeActivity"
+            android:label="@string/CaregiverHome" />
+        <activity android:name=".activity.RegisterLoginActivity" />
+        <activity android:name=".activity.CaregiverGeofenceSetupActivity" />
+
+        <service android:name=".service.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.FcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.FCMRegistrationService" />
+        <service android:name=".service.FCMUnregistrationService" />
+        <service android:name=".service.LocationUpdateService" />
+
+        <activity android:name=".activity.PatientActivities" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.NotesActivity" />
+        <activity android:name=".activity.GetNotesActivity" />
+
+        <service
+            android:name=".service.GeofenceTransitionsIntentService"
+            android:exported="false" />
+        <service
+            android:name=".service.LocationReminderListenerService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD5SZceEDO1nvYd0PlBSv64TElHpPbr_k4" />
+
+        <activity android:name=".activity.RemindByPhoto" />
+        <activity android:name=".activity.SaveByLocationActivity" />
+
+        <service
+            android:name=".service.LocationReminderListenerService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.CircleListActivity"
+            android:label="@string/title_activity_circle_list"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.CircleDetailsActivity"
+            android:label="@string/title_activity_circle_details"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+    </application>
+
+</manifest>

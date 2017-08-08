@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/my_patients"
+            android:icon="@drawable/ic_action_mypatient"
+            android:title="My Patients" />
+        <item
+            android:id="@+id/contact_details"
+            android:icon="@drawable/ic_find_friends"
+            android:title="Contact Details" />
+
+
+    </group>
+
+
+
+</menu>

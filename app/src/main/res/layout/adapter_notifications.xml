@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.sarika.alzheimerassistant.activity.CircleDetailsActivity">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#8FFF"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+        android:id="@+id/cName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Dummy caregiver"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/cEmail"
+        android:layout_alignStart="@+id/cEmail" />
+
+    <TextView
+        android:id="@+id/cEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cName"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginTop="15dp"
+        android:padding="2dp"
+        android:text="Dummy caregiver email" />
+
+    <TextView
+        android:id="@+id/cPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cEmail"
+        android:layout_alignStart="@+id/cEmail"
+        android:layout_below="@+id/cEmail"
+        android:layout_marginTop="15dp"
+        android:padding="2dp"
+        android:text="Dummy caregiver phone" />
+
+    <TextView
+        android:id="@+id/cAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_alignLeft="@+id/cPhone"
+        android:layout_alignStart="@+id/cPhone"
+        android:layout_below="@+id/cPhone"
+        android:layout_marginTop="15dp"
+        android:text="Dummy caregiver address" />
+            <ImageView
+                android:id="@+id/cImage"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:padding="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/cName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
